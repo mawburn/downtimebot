@@ -1,8 +1,6 @@
 import { SlashCommandBuilder } from '@discordjs/builders'
 
-export const pingCommand = {
-  data: new SlashCommandBuilder().setName('ping').setDescription('Replies with Pong!'),
-  async execute(interaction) {
-    await interaction.reply('Pong!')
-  },
-}
+export const pingCommand = new SlashCommandBuilder()
+  .setName('ping')
+  .setDescription('Check if this interaction is responsive')
+  .toJSON()
