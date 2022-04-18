@@ -1,0 +1,30 @@
+{
+  "Commands": {
+    "create": [
+      "create",
+      "make",
+      "start"
+    ],
+    "assign": [
+      "assign",
+      "add",
+      "include"
+    ],
+    "remove": [
+      "remove"
+    ],
+    "cancel": [
+      "cancel",
+      "stop",
+      "end"
+    ],
+    "roll": [
+      "r",
+      "roll"
+    ],
+    "help": [
+      "h",
+      "help"
+    ]
+  }
+}
