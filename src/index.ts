@@ -1,4 +1,7 @@
+import 'dotenv/config'
 import { Client, Intents } from 'discord.js';
+
+import config from './config';
 
 const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
 
@@ -18,4 +21,4 @@ client.on('interactionCreate', async interaction => {
 	}
 });
 
-client.login(process.env.TOKEN);
+client.login(config.token);
